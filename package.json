@@ -1,0 +1,25 @@
+{
+  "name": "dokuwiki-plugin-codify",
+  "version": "1.0.0",
+  "description": "Provides awesome code highlighting using codify in dokuwiki pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianezeani/dokuwiki-plugin-codify.git"
+  },
+  "keywords": [
+    "dokuwiki",
+    "dokuwiki-plugin",
+    "codemirror",
+    "codify"
+  ],
+  "author": "Christian Ezeani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christianezeani/dokuwiki-plugin-codify/issues"
+  },
+  "homepage": "https://github.com/christianezeani/dokuwiki-plugin-codify#readme"
+}

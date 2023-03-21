@@ -3,5 +3,5 @@ author Christian Ezeani
 email  christian@cyberpull.com
 date   2023-03-20
 name   codify plugin
-desc   Provides awesome code highlighting using codemirror in dokuwiki pages.
+desc   Provides awesome code highlighting using PrismJS in dokuwiki pages.
 url    http://www.dokuwiki.org/plugin:codify

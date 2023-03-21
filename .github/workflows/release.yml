@@ -1,17 +1,17 @@
-name: Build and publish @ngsuite/ngsuite
+name: Build and release plugin
 
 on:
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    tags:
+      - "*"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     environment: production
     env:
-      TOKEN: ${{ secrets.NPM_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     strategy:
       matrix:
         node-version: [16.x]
@@ -29,7 +29,16 @@ jobs:
       run: npm ci
 
     - name: Build Package
-      run: npm run build -- ngsuite
+      run: |
+        npm run build
+        cd dist
 
     - name: Create Release
-      run: bash .deploy/release.sh
+      uses: actions/create-release@v1
+      id: create_release
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        # body_path: ...
+        draft: false
+        prerelease: false

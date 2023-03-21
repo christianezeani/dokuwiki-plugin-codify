@@ -3,4 +3,3 @@ node_modules/
 bundle/
 
 dist/*.js
-dist/*.css

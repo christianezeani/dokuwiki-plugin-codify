@@ -1,0 +1,8 @@
+pre.dokuwiki-plugin-codify {
+  border-radius: 0px !important;
+}
+
+pre.dokuwiki-plugin-codify,
+pre.dokuwiki-plugin-codify > code {
+  box-shadow: none !important;
+}

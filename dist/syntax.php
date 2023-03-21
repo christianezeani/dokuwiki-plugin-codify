@@ -37,8 +37,10 @@ class syntax_plugin_codify extends DokuWiki_Syntax_Plugin {
 
     switch ($state) {
       case DOKU_LEXER_ENTER:
+        $lang = (empty($match)) ? '' : "language-{$match}";
+
         $renderer->doc .= "<pre class=\"dokuwiki-plugin-codify line-numbers\">";
-        $renderer->doc .= "<code class=\"language-{$match}\">";
+        $renderer->doc .= "<code class=\"{$lang}\">";
         break;
 
       case DOKU_LEXER_UNMATCHED:

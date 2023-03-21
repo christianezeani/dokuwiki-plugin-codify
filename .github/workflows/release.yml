@@ -31,8 +31,10 @@ jobs:
       run: |
         npm run build
         [[ ! -d bundle ]] && mkdir bundle
-        tar -zcvf ./bundle/codify.tar.gz ./dist
-        zip -r ./bundle/codify.zip ./dist/*
+        pushd dist
+        tar -zcvf ../bundle/codify.tar.gz ./*
+        zip -r ../bundle/codify.zip ./*
+        popd
 
     - name: Create Release
       uses: actions/create-release@v1

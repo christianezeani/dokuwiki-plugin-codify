@@ -2,7 +2,7 @@
 
 All documentation for this plugin can be found [here][plugin-url]
 
-If you install this plugin manually, make sure it is installed in lib/plugins/codify/ - if the folder is called different it will not work!
+If you install this plugin manually, make sure it is installed in `lib/plugins/codify/` - if the folder is different it will not work!
 
 Please refer to [Dokuwiki Plugins][plugins-dir-url] for additional info on how to install plugins in DokuWiki.
 

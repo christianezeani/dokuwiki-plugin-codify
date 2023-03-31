@@ -44,6 +44,7 @@ class syntax_plugin_codify extends DokuWiki_Syntax_Plugin {
         break;
 
       case DOKU_LEXER_UNMATCHED:
+        $match = ltrim($match);
         $renderer->doc .= $renderer->_xmlEntities($match);
         break;
 

@@ -1,4 +1,4 @@
-# codify Plugin for DokuWiki
+# Codify Plugin for DokuWiki
 
 All documentation for this plugin can be found [here][plugin-url]
 

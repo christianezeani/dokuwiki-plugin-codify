@@ -1,7 +1,7 @@
 base   codify
 author Christian Ezeani
 email  christian.ezeani@gmail.com
-date   2023-03-31
+date   2023-04-23
 name   Codify Plugin
 desc   Provides awesome code highlighting using PrismJS in dokuwiki pages.
 url    http://www.dokuwiki.org/plugin:codify
